@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="shopping cart">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/cart.css">
+    <!-- font awesome -->
+    <link href="css/all.css" rel="stylesheet">
+    <title> Shopping Cart </title>
+  </head>
+  <body id="haut">
+    <!--************************navbar************************-->
+    <nav class="navbar navbar-expand-lg px-4 " >
+      <a class="navbar-brand" href="#"><img src="image/baklewa.png" id="image-nav" alt=""></a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#myNav">
+        <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse  collapse  " id="myNav">
+        <ul class="navbar-nav mx-auto text-capitalize">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">home</a>
+          </li>
+          <li class="nav-item active ">
+            <a class="nav-link " href="#">about</a>
+          </li>
+          <li class="nav-item active ">
+            <a class="nav-link" href="#">store</a>
+          </li>
+        </ul>
+        <div class="nav-info-items d-none d-lg-flex ">
+          <!-- single info -->
+          <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+            <span class="info-icon mx-lg-3"><i class="fas fa-phone"></i></span>
+            <p class="mb-0">+ 216 53 222 859</p>
+          </div>
+          <!-- end of single info -->
+          <!-- single info -->
+          <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+            <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+            <p class="mb-0 text-capitalize"><span id="item-count"> 1 </span> item - <span class="item-total"> 80 Dt</span></p>
+          </div>
+          <!-- end of single info -->
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+      <!-- ***************************************banner ************************* -->
+   <!-- banner  -->
+   <div class="container-fluid">
+    <div class="row max-height justify-content-center align-items-center">
+      <div class="col-10 mx-auto banner text-center">
+        <h1 class="text-capitalize">welcome to <strong class="banner-title "> Handouch''s</strong></h1>
+        <a href="#store" class="btn banner-link text-uppercase my-2">explore</a>
+
+      </div>
+      <div id="cart" class="cart">
+         <!-- cart item -->
+         <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+          <img src="img-card/mignardise.jpg" class="img-fluid rounded-circle" id="item-img" alt="">
+          <div class="cart-item-text">
+
+            <p id="cart-item-title" class="font-weight-bold mb-0">mignardise</p>
+            <span>Dt</span>
+            <span id="cart-item-price" class="cart-item-price" class="mb-0">80</span>
+          </div>
+          <a href="#" id='cart-item-remove' class="cart-item-remove">
+            <i class="fas fa-trash"></i>
+          </a>
+        </div>
+        <!--end of  cart item -->
+        <!-- cart total -->
+        <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+          <h5>total</h5>
+          <h5> item<strong id="cart-total" class="font-weight-bold">80</strong> </h5>
+        </div>
+        <!--end cart total -->
+        <!-- cart buttons -->
+        <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+          <a href="#" id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase" >clear cart</a>
+          <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink">checkout</a>
+        </div>
+        <!--end of  cart buttons -->
+        <!--  -->
+      </div>
+    </div>
+  </div>
+
+  <!--end of  banner  -->
+</header>
+<!--****************************** end header*************************** -->
+<!-- about us -->
+<section class="about py-5" id="about">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-10 mx-auto col-md-6 my-5">
+        <h1 class="text-capitalize">about <strong class="banner-title ">us</strong></h1>
+        <p class="my-4 text-muted w-75"> Handouch's est un site de vente en ligne des délices traditionnels, on vous présente une très large gamme 
+          de produits de luxe, "baklewa sfaxienne , mlabes , kaak warka , kaak anber .. ". Henda est le chef diplomés d'une école de formation patisière à sfax 
+          avec une grande expérience en tunisie et  l'étrangé. 
+          allez passez vos commandes et vous étes les bienvenues ! 
+        </p>
+        <a href="#" class="btn btn-outline-secondary btn-black text-uppercase ">explore</a>
+
+      </div>
+      <div class="col-10 mx-auto col-md-6 align-self-center my-5">
+        <div class="about-img__container">
+          <img src="image/hlou.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end of about us -->
+<!--*******************************Store*******************************************-->
+
+<section id="store" class="store py-5">
+  <div class="container">
+    <!-- section title -->
+    <div class="row">
+      <div class="col-10 mx-auto col-sm-6 text-center">
+        <h1 class="text-capitalize">our <strong class="banner-title ">store</strong></h1>
+      </div>
+    </div>
+    <!-- end of section title -->
+    <!--filter buttons -->
+    <div class="row">
+      <div class=" col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
+        <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="all"> Baklewa</a>
+        <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="cakes">Mlabes</a>
+        <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="cupcakes">Kaab</a>
+        <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="sweets">Bjawia</a>
+        <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="doughnuts">Mignardise</a>
+      </div>
+    </div>
+
+     <!-- search box -->
+     <div class="row">
+
+      <div class="col-10 mx-auto col-md-6">
+        <form>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend ">
+              <span class="input-group-text search-box" id="search-icon"><i class="fas fa-search"></i></span>
+            </div>
+            <input type="text" class="form-control" placeholder='item....' id="search-item">
+          </div>
+
+        </form>
+      </div>
+    </div>
+    <!--end of filter buttons -->
+
+     <!-- store  items-->
+     <div class="row" class="store-items" id="store-items">
+      <!-- single item -->
+      <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item bjawia " data-item="bjawia" >
+        <div class="card ">
+          <div class="img-container">
+            <img src="image/bjawia.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Bjawia</h5>
+              <h5 class="store-item-value">Dt <strong id="store-item-price" class="font-weight-bold">60</strong></h5>
+
+            </div>
+          </div>
+        </div>
+        <!-- end of card-->
+      </div>
+       <!-- single item -->
+       <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item  baklewa" data-item="baklewa" >
+        <div class="card ">
+          <div class="img-container">
+            <img src="image/baklawa.png" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Baklewa</h5>
+              <h5 class="store-item-value">Dt <strong id="store-item-price" class="font-weight-bold">80</strong></h5>
+
+            </div>
+          </div>
+        </div>
+        <!-- end of card-->
+      </div>
+       <!-- single item -->
+       <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item kaak " data-item="kaak" >
+        <div class="card ">
+          <div class="img-container">
+            <img src="image/kaak.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Kaak</h5>
+              <h5 class="store-item-value">Dt <strong id="store-item-price" class="font-weight-bold">50</strong></h5>
+
+            </div>
+          </div>
+        </div>
+        <!-- end of card-->
+      </div>
+       <!-- single item -->
+       <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item  Mlabes_original" data-item="mlabes_original">
+        <div class="card ">
+          <div class="img-container">
+            <img src="image/mlabes_original.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Mlabes original</h5>
+              <h5 class="store-item-value">Dt <strong id="store-item-price" class="font-weight-bold">70</strong></h5>
+
+            </div>
+          </div>
+        </div>
+        <!-- end of card-->
+      </div>
+         <!-- single item -->
+       <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item Mignardise " data-item="mignardise" >
+        <div class="card ">
+          <div class="img-container">
+            <img src="image/mignardise.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Mignardise</h5>
+              <h5 class="store-item-value">Dt <strong id="store-item-price" class="font-weight-bold">80</strong></h5>
+
+            </div>
+          </div>
+        </div>
+        <!-- end of card-->
+        </div>
+         <!-- single item -->
+       <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item kaak_anber" data-item="kaak_anber" >
+        <div class="card ">
+          <div class="img-container">
+            <img src="image/kaak_anber.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Kaak Anber</h5>
+              <h5 class="store-item-value">Dt <strong id="store-item-price" class="font-weight-bold">50</strong></h5>
+
+            </div>
+          </div>
+        </div>
+        <!-- end of card-->
+      </div>
+       <!-- single item -->
+       <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item Gizata" data-item="gizata" >
+        <div class="card ">
+          <div class="img-container">
+            <img src="image/gizata.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Gizata</h5>
+              <h5 class="store-item-value">Dt <strong id="store-item-price" class="font-weight-bold">70</strong></h5>
+
+            </div>
+          </div>
+        </div>
+        <!-- end of card-->
+      </div>
+       <!-- single item -->
+       <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item chachia" data-item="chachia">
+        <div class="card ">
+          <div class="img-container">
+            <img src="image/chachia.jpg" class="card-img-top store-img" alt="">
+            <span class="store-item-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+              <h5 id="store-item-name">Chachia</h5>
+              <h5 class="store-item-value">Dt <strong id="store-item-price" class="font-weight-bold">50</strong></h5>
+
+            </div>
+          </div>
+        </div>
+        <!-- end of card-->
+      </div>
+     <!-- single item -->
+     <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item hlou_bourjoi" data-item="hlou_bourjoi" >
+      <div class="card ">
+        <div class="img-container">
+          <img src="image/bourjoi.jpg" class="card-img-top store-img" alt="">
+          <span class="store-item-icon">
+            <i class="fas fa-shopping-cart"></i>
+          </span>
+        </div>
+        <div class="card-body">
+          <div class="card-text d-flex justify-content-between text-capitalize">
+            <h5 id="store-item-name">Hlou bourjois</h5>
+            <h5 class="store-item-value">Dt <strong id="store-item-price" class="font-weight-bold">80</strong></h5>
+
+          </div>
+        </div>
+      </div>
+      <!-- end of card-->
+    </div>
+
+  <!-- jquery -->
+  <!-- bootstrap js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <!-- script js -->
+  <script src="js/style.js"></script>
+  </body>
+  </html>
